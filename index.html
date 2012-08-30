@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>jQuery Alert Plugin</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.alert.js"></script>
+	<script type="text/javascript">		
+		
+		$(document).ready(function() {
+			$.alert("error", "Hey, seems that an error was detected! With a very very very long string in the backend :-/");
+			$.alert("success", "Hey, seems that a success message was detected :-)");
+			
+			$.alert({
+				message: "mhh - this is a custom message panel",
+				settings: { 
+					duration: 10000, 
+					css: { 
+						color: "green", 
+						backgroundColor: "yellow"
+					} 
+				}
+			});
+		});
+		
+		
+		
+		function trigger(type) {
+			$.alert(type, "Code: " + new Date().getTime());
+		}
+		
+	</script>
+</head>
+<body>
+	<h1>jQuery Alert Plugin Demo</h1>
+	<button onclick="trigger('success')" style="margin-top:400px;font-size:20px;height:50px;width:200px;">TRIGGER GOOD</button>
+	<button onclick="trigger('error')" style="margin-top:400px;font-size:20px;height:50px;width:200px;">TRIGGER BAD</button>
+</body>
+</html>
