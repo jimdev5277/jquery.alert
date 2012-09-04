@@ -1,11 +1,12 @@
 jQuery Alert Panels
 =============
+-------------
 
 Simple jQuery plugin to show alert panels at the top of a page. 
 It's easy and simple to configure.
 
 Usage
-=============
+-------------
 
 ```javascript
 // simple error message
@@ -29,3 +30,7 @@ $.alert({
 
 That's it !
 Easy mh?
+
+Demo
+-------------
+http://jsbin.com/ulisaz/1/
