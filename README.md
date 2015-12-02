@@ -1,36 +1,27 @@
 jQuery Alert Panels
 =============
 -------------
+仿照修改显示为bootstarp样式的弹窗
 
-Simple jQuery plugin to show alert panels at the top of a page. 
-It's easy and simple to configure.
-
-Usage
+用法
 -------------
 
 ```javascript
-// simple error message
-$.alert("error", "This is a fatal error!");
+// 错误信息
+$.alert("error", "这是错误信息");
 
-// simple success message
-$.alert("success", "Registration successful!");
+// 成功信息
+$.alert("warning", "这是警告信息");
 
-// custom css and duration
+//
+// 自定义信息
 $.alert({
-  message: "mhh - this is a custom message panel",
-  settings: { 
-    duration: 10000, 
-    css: { 
-      color: "green", 
-      backgroundColor: "yellow"
-    }
-  }
+				message: "这是普通信息",
+				settings: {
+					duration: 0
+				}
+			});
 });
 ```
-
-That's it !
-Easy mh?
-
-Demo
--------------
-http://jsbin.com/ulisaz/2/
+截图信息
+![运行结果截图](http://7xi7mt.com1.z0.glb.clouddn.com/md-QQjietu20151202111322.png)

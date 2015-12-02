@@ -3,22 +3,20 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>jQuery Alert Plugin</title>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="alert.bootstarp.css"/>
+	<script type="text/javascript" src="../js/lib/jquery.1.9.0.js"></script>
 	<script type="text/javascript" src="jquery.alert.js"></script>
 	<script type="text/javascript">		
 		
 		$(document).ready(function() {
-			$.alert("error", "Hey, seems that an error was detected! With a very very very long string in the backend :-/");
-			$.alert("success", "Hey, seems that a success message was detected :-)");
-			
+			$.alert("error", "这是错误信息");
+			$.alert("success", "这是成功信息");
+			$.alert("warning", "这是警告信息");
+
 			$.alert({
-				message: "mhh - this is a custom message panel",
-				settings: { 
-					duration: 10000, 
-					css: { 
-						color: "green", 
-						backgroundColor: "yellow"
-					} 
+				message: "这是普通信息",
+				settings: {
+					duration: 0
 				}
 			});
 		});
